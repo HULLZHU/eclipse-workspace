@@ -1,0 +1,117 @@
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Arc;
+import javafx.scene.shape.ArcType;
+import javafx.scene.text.Text;
+import javafx.scene.transform.Rotate;
+public class PieChart extends Pane {
+	
+	private double[] factors;
+	private int numberOfFactors;
+	private double sumOfFactors;
+	private double[] percentiles;
+	private Text[] descriptions;
+	private double radius;
+	private Arc[] arcs;
+
+	
+	public PieChart() {
+		
+	}
+	
+	public PieChart(double[] factors) {
+		//renew dataField
+		//renew factors
+		this.factors = factors;
+		//renew numberOfFactors
+		numberOfFactors = factors.length;
+		//renew sumOfFactors;
+		sumOfFactors = getSumOfFactors();
+		//renew percentiles
+		percentiles = getPercentiles();
+		//renew descriptions
+		descriptions = getDescriptions();
+		//set the default radius;
+		radius = 50;
+		//set the length of arcs array
+		arcs = new Arc[numberOfFactors];
+		//print final result
+		printPieChart();
+	}
+	
+	//key process to finally output the chart
+	public void printPieChart() {
+		double startAngle = 0;
+		double coveredAngle = 0;
+		//print arcs
+		for ( int i = 0; i<numberOfFactors; i ++ ) {
+			
+			coveredAngle = 360 * percentiles[i];
+			Arc arc = new Arc(radius+50,radius+50,radius,radius,startAngle,coveredAngle);
+			arc.setFill(Color.color(Math.random(), Math.random(), Math.random()));
+			arc.setStroke(Color.BLACK);
+			arcs[i] = arc;
+			arc.setType(ArcType.ROUND);
+			this.getChildren().add(arc);
+			addText(startAngle,coveredAngle,descriptions[i],arcs[i]);
+			startAngle = startAngle + coveredAngle;
+		}
+	}
+
+	//make no sense if provided to user, thus hidden in private modifier
+	private void addText(double startAngle, double coveredAngle, Text text,Arc arc) {
+		text.xProperty().bind(arc.centerXProperty());
+		text.yProperty().bind(arc.centerYProperty());
+		text.setTranslateX(arc.getCenterX());
+		text.setTranslateY(arc.getCenterY());
+		text.setRotate(startAngle + 0.5*coveredAngle);
+		this.getChildren().add(text);
+	}
+
+	public Text[] getDescriptions() {
+		//define the length of descriptions array, making it legal
+		descriptions = new Text[numberOfFactors];
+		for ( int i = 0; i < numberOfFactors; i ++) {
+			String text = (Math.round(percentiles[i]*10000))/100+"%";
+			descriptions[i] = new Text("                                 " +text);
+		}
+		return descriptions;
+	}
+
+	public double[] getPercentiles() {
+		//define the length of percentiles array, making it legal
+		double percentiles[] = new double[numberOfFactors];
+		//value the factors in the percentiles
+		for ( int i = 0; i < numberOfFactors; i ++ ) {
+			percentiles[i] = factors[i]/sumOfFactors;
+		}
+		return percentiles;
+	}
+
+	//get the sum of factors
+	public double getSumOfFactors() {
+		double sum = 0;
+		for ( int i = 0; i < factors.length ; i ++ ) {
+			sum += factors[i];
+		}
+		return sum;
+	}
+	
+	//set the size of pieChart
+	public void setSize(double radius) {
+		this.radius = radius;
+		for ( int i = 0; i< arcs.length ; i++ ) {
+			arcs[i].setRadiusX(radius);
+			arcs[i].setRadiusY(radius);
+			arcs[i].setCenterX(radius+100);
+			arcs[i].setCenterY(radius+100);
+		}
+	}
+	
+	public double getSize() {
+		return radius;
+	}
+
+	
+
+}

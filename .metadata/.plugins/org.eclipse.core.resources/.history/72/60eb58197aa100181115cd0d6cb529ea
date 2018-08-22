@@ -1,0 +1,20 @@
+import java.io.File;
+import javafx.application.*;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
+import java.util.*;
+
+import javafx.scene.image.Image;
+
+public class Demo extends Application {
+	public static void main(String args[]) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage arg0) throws Exception {
+		FlowPane pane = new FlowPane();
+		System.out.println(pane.getChildren());
+	}
+}

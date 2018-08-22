@@ -1,0 +1,65 @@
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
+
+public class Bar extends FlowPane{
+	private int numberOfBars;
+	private double[] quantities;
+	private double[] percentiles;
+	private Rectangle[] rectangles;
+	private BorderPane[] singlePanes;
+	private Text[] descriptions;
+	private String color;
+	private double totalHeight = 1000;
+	private double barWidth = 50;
+	
+	public Bar() {
+	}
+	
+	public Bar(double [] quantities) {
+		//输入各个数据段的大小
+		this.quantities = quantities;
+		//获得百分比数列的长度
+		percentiles = new double[quantities.length];
+		//获得bar的数列
+		rectangles = new Rectangle[quantities.length];
+		numberOfBars = quantities.length;
+		percentiles = getPercentiles();
+		//获得需要的子pane数列
+		singlePanes= new BorderPane[quantities.length];
+		printBars();
+	}
+    private void printBars() {
+    	this.setVgap(5);
+		for ( int i = 0 ; i < percentiles.length; i++) {
+			rectangles[i] = new Rectangle();
+			rectangles[i].setWidth(this.barWidth);
+			rectangles[i].setHeight(this.totalHeight*percentiles[i]);
+		}
+		
+		for ( int i = 0; i < rectangles.length ; i ++ ) {
+			BorderPane pane = new BorderPane();
+			pane.setBottom(rectangles[i]);
+			this.getChildren().add(pane);
+		}
+		
+	}
+	//获得百分比数列的数据
+	public double[] getPercentiles() {
+		double sumQuantity = getSumQuantity();
+		for ( int i = 0 ; i <quantities.length;i++) {
+			percentiles[i] = quantities[i]/sumQuantity;
+		}
+		return percentiles;
+	}
+	//获得数据的总量
+	private double getSumQuantity() {
+		double sum =0;
+		for (int i= 0; i< quantities.length ; i ++ ) {
+			sum += quantities[i];
+		}
+		return sum;
+	}
+}

@@ -1,0 +1,64 @@
+import javafx.application.Application;
+import javafx.collections.ObservableList;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Line;
+import javafx.scene.shape.Polyline;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
+public class PlotSineAndCosineFunction extends Application{
+
+	public static void main(String[] args)  {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		//create pane
+		Pane pane = new Pane();
+		//create 2 axis
+		Line horizontalAxis = new Line(0,200,800,200);
+		Line verticalAxis = new Line(400,390,400,20);
+		//create curve
+		Polyline sin = new Polyline();
+		Polyline cos = new Polyline();
+		double scaleFactor = 50;
+		ObservableList<Double> sinList = sin.getPoints();
+		ObservableList<Double> cosList = cos.getPoints();
+		for ( double x = 20; x < 780; x += 0.25) {
+			double ySin = -(Math.sin((x-400)/50))*scaleFactor+200;
+			double yCos = -(Math.cos((x-400)/50))*scaleFactor+200;
+			cosList.addAll(x,yCos);
+			sinList.addAll(x,ySin);
+		}
+		//create and add texts
+		Text text0 = new Text(0+"");
+		text0.setX(400);
+		text0.setY(210);
+		
+		Text pi1 = new Text("-2\u03c0");
+		pi1.setX(400-2*Math.PI*50);
+		pi1.setY(210);
+		
+		Text pi2 = new Text("-\u03c0");
+		pi2.setX(400-Math.PI*50);
+		pi2.setY(210);
+		
+		Text pi3 = new Text("\u03c0");
+		pi3.setX(400+Math.PI*50);
+		pi3.setY(210);
+		
+		Text pi4 = new Text("2\u03c0");
+		pi4.setX(400+2*Math.PI*50);
+		pi4.setY(210);
+		
+		
+		pane.getChildren().addAll(verticalAxis,horizontalAxis,sin,cos);
+		pane.getChildren().addAll(pi1,pi2,pi3,pi4,text0);
+		Scene scene = new Scene(pane);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+}

@@ -1,0 +1,30 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.shape.Ellipse;
+import javafx.scene.paint.Color;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+public class Eye extends StackPane{
+	private double innerRadiusX;
+	private double innerRadiusY;
+	private double outerRadiusX;
+	private double outerRadiusY;
+	
+	public Eye(double innerRadiusX,double innerRadiusY,double outerRadiusX,double outerRadiusY) {
+		this.innerRadiusX = innerRadiusX;
+		this.innerRadiusY = innerRadiusY;
+		this.outerRadiusX = outerRadiusX;
+		this.outerRadiusY = outerRadiusY;
+		Ellipse innerEllipse = new Ellipse(this.innerRadiusX,this.innerRadiusY);
+		innerEllipse.setFill(Color.RED);
+		Ellipse outerEllipse = new Ellipse(this.outerRadiusX,this.outerRadiusY);
+		outerEllipse.setFill(Color.WHEAT);
+		this.getChildren().addAll(outerEllipse,innerEllipse);
+	}
+	
+	public Eye() {
+		this(50,30,70,50);
+	}
+
+}

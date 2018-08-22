@@ -1,0 +1,24 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.shape.Arc;
+import javafx.scene.layout.Pane;
+import javafx.scene.Scene;
+public class LowerCircle extends Application{
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Arc arc1 = new Arc(100,100,50,50,0,-180);
+		
+		Pane pane = new Pane();
+		pane.getChildren().add(arc1);
+		
+		Scene scene = new Scene(pane);
+		primaryStage.setTitle("LowerCircle");
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+}

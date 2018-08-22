@@ -1,0 +1,23 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class BarDisplayer extends Application{
+
+	@Override
+	public void start(Stage primary) throws Exception {
+		double[] numbers = {100,200,22,190};
+		Bar bar = new Bar(numbers);
+		Scene scene = new Scene(bar);
+		primary.setScene(scene);
+		primary.show();
+		
+	}
+	
+	public static void main(String args[]) {
+		launch(args);
+	}
+
+
+
+}

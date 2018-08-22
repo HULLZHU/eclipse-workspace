@@ -1,0 +1,12 @@
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Arc;
+
+public class Mouth extends StackPane{
+	public Mouth() {
+		Arc mouth = new Arc(300,300,150,80,0,-180);
+		this.getChildren().add(mouth);
+		mouth.setFill(Color.WHITE);
+		mouth.setStroke(Color.BLACK);
+	}
+}

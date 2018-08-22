@@ -1,0 +1,44 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.Scene;
+public class ShowImagesInGridPane extends Application{
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		//create GridPane instance
+		GridPane pane = new GridPane();
+		//create ImageView instances
+		ImageView imageView1 = new ImageView("file:image/flag0.gif");
+		ImageView imageView2 = new ImageView("file:image/us.gif");
+		ImageView imageView3 = new ImageView("file:image/flag2.gif");
+		ImageView imageView4 = new ImageView("file:image/flag3.gif");
+		
+		imageView1.setFitHeight(100);
+		imageView1.setFitWidth(200);
+		imageView2.setFitHeight(100);
+		imageView2.setFitWidth(200);
+		imageView3.setFitHeight(100);
+		imageView3.setFitWidth(200);
+		imageView4.setFitHeight(100);
+		imageView4.setFitWidth(200);
+		
+		pane.add(imageView1, 0, 0);
+		pane.add(imageView2, 0, 2);
+		pane.add(imageView3, 2, 0);
+		pane.add(imageView4, 2, 2;
+		
+		Scene scene = new Scene(pane);
+		
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+}

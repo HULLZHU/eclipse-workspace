@@ -1,0 +1,21 @@
+import javafx.scene.Node;
+import javafx.scene.layout.StackPane;
+import javafx.scene.shape.Polygon;;
+
+public class Triangle extends StackPane {
+	private Polygon triangle;
+	
+	public Triangle() {
+		triangle = new Polygon(100,100,200,100,150,50);
+		this.getChildren().add(triangle);
+	}
+	
+	public Triangle(double x1,double y1,double x2,double y2,double x3,double y3) {
+	    triangle = new Polygon( x1, y1, x2, y2, x3,y3);
+		this.getChildren().add(triangle);
+	}
+	
+	public void setColor(String color) {
+		
+	}
+}

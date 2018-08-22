@@ -1,0 +1,134 @@
+import java.util.Calendar;
+
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
+
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+
+public class ClockPane extends Pane{
+	private int hour;
+	private int minute;
+	private int second;
+	private double width;
+	private double length;
+	private Calendar calendar;
+	
+	public ClockPane(){
+        calendar = Calendar.getInstance();
+		hour = getCurrentHour();
+		minute = getCurrentMinute();
+		second = getCurrentSecond();
+		width = 100;
+		length = 100;
+		this.getClock(hour,minute,second);
+	}
+	
+	public ClockPane(int hour, int minute,int second) {
+		this.hour = hour;
+		this.minute = minute;
+		this.second = second;
+		width = 100;
+		length = 100;
+		this.getClock(hour,minute,second);
+	}
+
+	
+	//this method is to draw the clock
+	private void getClock(int hour, int minute, int second) {
+		//draw the peripheral circle first
+		this.getCircle();
+		
+		double angleOfSecondHand = (second/60)*360;
+		double angleOfMinuteHand = (minute/60)*360 + second*0.1;
+		double angleOfHourHand = (hour/12 *360) + 0.5*minute;
+		
+		//add Hands
+		this.printSecondHand(angleOfSecondHand);
+		this.printMinuteHand(angleOfMinuteHand);
+		this.printHourHand(angleOfHourHand);
+		
+	}
+
+	private void printHourHand(double angleOfHourHand) {
+		Line line = new Line (getCenterX(),getCenterY(),getCenterX(),getCenterY()+width/2 * 0.65);
+		line.setRotate(angleOfHourHand);
+		line.setFill(Color.BLACK);
+		line.setStrokeWidth(10);
+		this.getChildren().add(line);
+		
+	}
+
+	private void printMinuteHand(double angleOfMinuteHand) {
+		Line line = new Line (getCenterX(),getCenterY(),getCenterX(),getCenterY()+width/2 * 0.45);
+		line.setRotate(angleOfMinuteHand);
+		line.setFill(Color.RED);
+		line.setStrokeWidth(7);
+		this.getChildren().add(line);
+	}
+
+	private void printSecondHand(double angleOfSecondHand) {
+		Line line = new Line (getCenterX(),getCenterY(),getCenterX(),getCenterY()+width/2 * 0.3);
+		line.setRotate(angleOfSecondHand);
+		line.setFill(Color.BLUE);
+		line.setStrokeWidth(5);
+		this.getChildren().add(line);
+	}
+
+	private double getCenterY() {
+		return width/2;
+	}
+
+	private double getCenterX() {
+		return length/2;
+	}
+
+	private void getCircle() {
+		Circle circle = new Circle(width/2,length/2,Math.min(width, length)*0.8);
+		circle.setFill(Color.BROWN);
+		this.getChildren().add(circle);
+	}
+
+	private int getCurrentSecond() {
+		int second = calendar.get(Calendar.SECOND);
+		return second;
+	}
+
+	private int getCurrentMinute() {
+		int minute = calendar.get(Calendar.MINUTE);
+		return minute;
+	}
+
+	private int getCurrentHour() {
+		int hour = calendar.get(Calendar.HOUR);
+		if ( hour <= 12)
+			return hour;
+		else
+			return hour - 12;
+	}
+	
+	public int getHour() {
+		return hour;
+	}
+	
+	public int getMinute() {
+		return minute;
+	}
+	
+	public int getSecond() {
+		return second;
+	}
+	
+	public void setHour(int hour) {
+		this.hour = hour;
+	}
+	
+	public void setMinute(int minute) {
+		this.minute = minute;
+	}
+	
+	public void setSecond(int second) {
+		this.second = second;
+	}
+
+}

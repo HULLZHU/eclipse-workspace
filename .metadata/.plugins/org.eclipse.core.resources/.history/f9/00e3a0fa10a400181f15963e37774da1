@@ -1,0 +1,46 @@
+import javafx.application.Application;
+import javafx.collections.ObservableList;
+
+import javafx.stage.Stage;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Polygon;
+import javafx.scene.shape.Arc;
+import javafx.scene.shape.ArcType;
+import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+
+public class Smile extends Application {
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		GridPane pane = new GridPane();
+		//create a circle and define the type
+		Circle circle = new Circle(300);
+		circle.setFill(Color.WHITE);
+		circle.setStroke(Color.BLACK);
+		Triangle triangle = new Triangle();
+		
+		
+		Arc arc= new Arc(0,0,100,60,0,-180);
+		arc.setStroke(Color.BLACK);
+		arc.setType(ArcType.OPEN);
+		arc.setFill(Color.WHITE);
+		
+		pane.add(circle, 300, 300);
+		pane.add(triangle, 300, 300);
+		pane.add(new Eye(),300,300);
+		pane.add(arc, 350,250);
+	
+		
+		Scene scene = new Scene(pane);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+		
+	}
+
+}

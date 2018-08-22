@@ -1,0 +1,5 @@
+import javafx.scene.StackPane;
+
+public class CustomPane extends StackPane {
+
+}

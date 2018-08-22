@@ -1,0 +1,11 @@
+import java.io.File;
+import java.util.*;
+
+import javafx.scene.image.Image;
+
+public class Demo {
+	public static void main(String args[]) {
+		Image newImage = new Image ("us.gif");
+		System.out.println(newImage.getHeight());
+	}
+}

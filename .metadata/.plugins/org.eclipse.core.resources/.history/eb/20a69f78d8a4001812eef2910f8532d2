@@ -1,0 +1,57 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
+import javafx.stage.Stage;
+
+public class Display33Grid extends Application {
+
+	public static void main(String[] args) {
+		launch(args);
+
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Pane pane = new Pane();
+		final double PANEWIDTH = 300;
+		final double PANEHEIGHT = 300;
+		
+		Line line1 = new Line(100,0,100,300);
+		line1.startXProperty().bind(pane.widthProperty().divide(3));
+		line1.setStartY(0);
+		line1.endXProperty().bind(line1.startXProperty());
+		line1.endYProperty().bind(pane.heightProperty());
+		line1.setStroke(Color.BLUE);
+		
+		
+		Line line2 = new Line(200,0,200,300);
+		line2.startXProperty().bind(pane.widthProperty().divide(3).multiply(2));
+		line2.setStartY(0);
+		line2.endXProperty().bind(line2.startXProperty());
+		line2.endYProperty().bind(pane.heightProperty());
+		line2.setStroke(Color.BLUE);
+		
+		Line line3 = new Line(0,100,300,100);
+		line3.setStartX(0);
+		line3.startYProperty().bind(pane.heightProperty().divide(3));
+		line3.endXProperty().bind(pane.widthProperty());
+		line3.endYProperty().bind(line3.startYProperty());
+		line3.setStroke(Color.RED);
+
+		Line line4 = new Line(0,200,300,200);
+		line4.setStartX(0);
+		line4.startYProperty().bind(pane.heightProperty().divide(3).multiply(2));
+		line4.endXProperty().bind(pane.widthProperty());
+		line4.endYProperty().bind(line4.startYProperty());
+		line4.setStroke(Color.RED);
+		
+		Scene scene = new Scene(pane,300,300);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+		
+		
+	}
+
+}

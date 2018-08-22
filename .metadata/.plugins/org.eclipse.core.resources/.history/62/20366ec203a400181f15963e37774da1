@@ -1,0 +1,33 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.shape.Ellipse;
+import javafx.scene.paint.Color;
+import javafx.scene.layout.Pane;
+public class Eye extends Pane{
+	private double centerX;
+	private double centerY;
+	private double innerRadiusX;
+	private double innerRadiusY;
+	private double outerRadiusX;
+	private double outerRadiusY;
+	
+	public Eye(double centerX,double centerY,double innerRadiusX,double innerRadiusY,double outerRadiusX,double outerRadiusY) {
+		this.centerX= centerX;
+		this.centerY = centerY;
+		this.innerRadiusX = innerRadiusX;
+		this.innerRadiusY = innerRadiusY;
+		this.outerRadiusX = outerRadiusX;
+		this.outerRadiusY = outerRadiusY;
+		Ellipse innerEllipse = new Ellipse(this.centerX,this.centerY,this.innerRadiusX,this.innerRadiusY);
+		innerEllipse.setFill(Color.RED);
+		Ellipse outerEllipse = new Ellipse(this.centerX,this.centerY,this.outerRadiusX,this.outerRadiusY);
+		outerEllipse.setFill(Color.WHEAT);
+		this.getChildren().addAll(innerEllipse,outerEllipse);
+	}
+	
+	public Eye() {
+		this(200,200,50,30,70,50);
+	}
+
+}

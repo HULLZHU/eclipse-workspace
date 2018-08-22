@@ -1,0 +1,5 @@
+import javafx.scene.Node;
+
+public class Fan extends Node {
+
+}

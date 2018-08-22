@@ -1,0 +1,39 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
+import javafx.stage.Stage;
+
+public class ConnectTwoCircles extends Application{
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		Pane pane = new Pane();
+		
+		Circle circle1 = new Circle(150*Math.random(),150*Math.random(),15);
+		Circle circle2 = new Circle(150*Math.random(),150*Math.random(),15);
+		
+		double slope = (circle1.getCenterY()-circle2.getCenterY())/(circle2.getCenterX()-circle2.getCenterY());
+		double radius1 = Math.abs(Math.atan(slope));
+		double radius2 = Math.atan((Math.PI/2)-radius1);
+		
+		double startX = circle1.getCenterX()+(15*Math.cos(radius1));
+		double startY = circle1.getCenterY()+(15*Math.sin(radius1));
+		
+		double endX = circle2.getCenterX()+(15*Math.cos(radius2));
+		double endY = circle2.getCenterY()+(15*Math.sin(radius2));
+		
+		pane.getChildren().addAll(circle1,circle2,new Line(startX,startY,endX,endY));
+		Scene scene = new Scene(pane,1000,1000);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+		
+		
+	}
+
+}
