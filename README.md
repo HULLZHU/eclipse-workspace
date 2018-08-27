@@ -31,3 +31,7 @@ Study EveryDay: 1.totally finish multiple-step binaryTree model in Java, and use
 3.review Probability theory and mathematical statistics
 Meals:so easy, noodle for 2 meals and some wheat bread for dinner.
 sports : running 2 km 
+
+26/08/2018
+Event Everyday: Shopping all the day
+Sports Everyday:run 2.3km
