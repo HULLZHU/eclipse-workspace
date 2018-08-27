@@ -35,3 +35,9 @@ sports : running 2 km
 26/08/2018
 Event Everyday: Shopping all the day
 Sports Everyday:run 2.3km
+
+27/08/2018
+Event EveryDay: Went to bookstore for a visit
+Study EveryDay: review Probability theory and mathematical statistics; Introduction to Java Event Driven Programming; Python OOP;
+Sports EveryDay: 2.3 km
+Meals :chiken sides, beef, rice, coke, banana and strawberries
