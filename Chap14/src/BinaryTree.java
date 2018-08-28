@@ -4,8 +4,10 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.application.Application;
+import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.event.*;
 
 public class BinaryTree extends Pane {
 private Color colorOfNodes =Color.GREEN;
@@ -28,6 +30,8 @@ private double [][] prices = new double[stepNumber][];
 private double [] counts = new double[stepNumber];
 private double totalHeight =800;
 private int testNumber;
+private Button enlargeNodes = new Button("Enlarge");
+private Button shrinkNodes = new Button("Shrink");
 
 public BinaryTree(double riskfreeRate,double volatility, double stockPrice,double deltaT,int stepNumber) {
 	this.riskfreeRate = riskfreeRate;
@@ -44,7 +48,35 @@ public BinaryTree(double riskfreeRate,double volatility, double stockPrice,doubl
 	startPointX = 50;
 	prices = new double[stepNumber+1][];
 	counts = new double[stepNumber+1];
+	this.getChildren().add(enlargeNodes);
+	this.getChildren().add(shrinkNodes);
+	setEnlargeNodes();
+	setShrinkNodes();
 }
+private void setShrinkNodes() {
+	shrinkNodes.setLayoutX(enlargeNodes.getLayoutX() + 150);
+	shrinkNodes.setOnAction((ActionEvent e)->{
+		for ( int i = 0; i < nodes.length ; i ++ ) {
+			for ( int j = 0; j < nodes[i].length ; j ++ ) {
+				if (nodes[i][j].getRadius()>2)
+				nodes[i][j].setRadius(nodes[i][j].getRadius()-1);
+			}
+		}
+	});	
+	
+}
+private void setEnlargeNodes() {
+	enlargeNodes.setOnAction((ActionEvent e)->{
+		for ( int i = 0; i < nodes.length ; i ++ ) {
+			for ( int j = 0; j < nodes[i].length ; j ++ ) {
+				nodes[i][j].setRadius(nodes[i][j].getRadius()+1);
+			}
+		}
+	});	
+}
+
+
+
 public void setStepNumber(int stepNumber) {
 	this.stepNumber = stepNumber;}
 public double getRiskfreeRate() {
