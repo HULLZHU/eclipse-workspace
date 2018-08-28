@@ -41,3 +41,9 @@ Event EveryDay: Went to bookstore for a visit
 Study EveryDay: review Probability theory and mathematical statistics; Introduction to Java Event Driven Programming; Python OOP;
 Sports EveryDay: 2.3 km
 Meals :chiken sides, beef, rice, coke, banana and strawberries
+
+28/08/2018
+Event EveryDay: No special Events
+Study EveryDay: Key Event, Action Event, Python OOP; Probability theory and mathematical statistics, do 15 exercises, feel good 
+SPorts : 2 km
+Meals : chiken sides, beef, rice, coke, banana
