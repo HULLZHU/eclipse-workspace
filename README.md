@@ -47,3 +47,4 @@ Event EveryDay: No special Events
 Study EveryDay: Key Event, Action Event, Python OOP; Probability theory and mathematical statistics, do 15 exercises, feel good 
 SPorts : 2 km
 Meals : chiken sides, beef, rice, coke, banana
+Other Plan: reconstruct Stock Price Binary Tree in next week and implement more functions.
