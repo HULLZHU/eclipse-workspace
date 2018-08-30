@@ -45,7 +45,7 @@ Meals :chiken sides, beef, rice, coke, banana and strawberries
 28/08/2018
 Event EveryDay: No special Events
 Study EveryDay: Key Event, Action Event, Python OOP; Probability theory and mathematical statistics, do 15 exercises, feel good 
-SPorts : 2 km
+SPorts : 2.5Km runnning
 Meals : chiken sides, beef, rice, coke, banana
 Other Plan: reconstruct Stock Price Binary Tree in next week and implement more functions.
 
@@ -53,4 +53,11 @@ Other Plan: reconstruct Stock Price Binary Tree in next week and implement more 
 Event EveryDay:NO Special Event
 Study : JavaFX Animation Programming; Probability theory and mathematical statistics, do 25 exercises; Python OOP
 meals: beef, chicken sides, rice, banana, cofe
+SPort: 1.5 KM running
 Other plan: finish studying chapter 1 of Probability theory and mathematical statistics tommorrow by having a self-test
+
+30/08/2018
+Event:Nothing special
+Study:finished studying chapter 1 of Probability theory and mathematical statistics by having a self-test, 95/100, not bad, uh huh
+meals: rice, egg, beef, chicken, noodle, cafe
+
