@@ -48,3 +48,9 @@ Study EveryDay: Key Event, Action Event, Python OOP; Probability theory and math
 SPorts : 2 km
 Meals : chiken sides, beef, rice, coke, banana
 Other Plan: reconstruct Stock Price Binary Tree in next week and implement more functions.
+
+29/08/2018
+Event EveryDay:NO Special Event
+Study : JavaFX Animation Programming; Probability theory and mathematical statistics, do 25 exercises; Python OOP
+meals: beef, chicken sides, rice, banana, cofe
+Other plan: finish studying chapter 1 of Probability theory and mathematical statistics tommorrow by having a self-test
