@@ -61,3 +61,8 @@ Event:Nothing special
 Study:finished studying chapter 1 of Probability theory and mathematical statistics by having a self-test, 95/100, not bad, uh huh
 meals: rice, egg, beef, chicken, noodle, cafe
 
+31/08/2018
+Event:Walk out to UConn campus;
+Study:Probability theory and mathematical statistics ; 5 exercise in Javafx Programming
+Meal: Big Mac, noodle
+
