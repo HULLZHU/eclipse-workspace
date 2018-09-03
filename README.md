@@ -66,3 +66,10 @@ Event:Walk out to UConn campus;
 Study:Probability theory and mathematical statistics ; 5 exercise in Javafx Programming
 Meal: Big Mac, noodle
 
+01/09/2018
+Take a rest all day
+
+02/09/2018
+Event: No Event
+Study: Javafx Programming 11 exercises; Probability theory and mathematical statistics ; 5 exercise in Javafx Programming
+Meal: Sushi buffet; Beef fired with NianGao; Cofe; Coke; 
