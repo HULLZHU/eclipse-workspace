@@ -42,6 +42,7 @@ public class InsideCircle extends Application{
 			textY.set(e.getY());
 		});
 		
+		
 		//show 
 		primaryStage.setScene(scene);
 		primaryStage.show();
