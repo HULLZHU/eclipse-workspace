@@ -71,5 +71,11 @@ Take a rest all day
 
 02/09/2018
 Event: No Event
-Study: Javafx Programming 11 exercises; Probability theory and mathematical statistics ; 5 exercise in Javafx Programming
+Study: Javafx Programming 11 exercises; Probability theory and mathematical statistics ; 
 Meal: Sushi buffet; Beef fired with NianGao; Cofe; Coke; 
+
+03/09/2018
+Event:Party Night
+Study:Javafx Programming 11 exercises; Probability theory and mathematical statistics ; 
+Meal:Too much
+Sports: get Drund, dead sleep
