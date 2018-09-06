@@ -81,14 +81,14 @@ Meal:Too much
 Sports: get Drund, dead sleep
 
 04/09/2018
-Event:First school day; Modeling Coure
+Event:First school day; Modeling Coure 7:00 pm -10:00 pm
 Study:Javafx Programming 5 exercises; Probability theory and mathematical statistics ; 
 Meal:eat in freind's house. Chinese Food
 Sport: NO
 
 
 05/09/2018
-Event:No Event
+Event:No Event, 7:00 pm -10:00 pm for class
 Study:Javafx Programming 5 exercises; Probability theory and mathematical statistics ; R programming for Modeling Course
 Meal:eat in freind's house. Chinese Food
 Sport: NO
