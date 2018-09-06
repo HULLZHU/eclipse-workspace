@@ -79,3 +79,16 @@ Event:Party Night
 Study:Javafx Programming 11 exercises; Probability theory and mathematical statistics ; 
 Meal:Too much
 Sports: get Drund, dead sleep
+
+04/09/2018
+Event:First school day; Modeling Coure
+Study:Javafx Programming 5 exercises; Probability theory and mathematical statistics ; 
+Meal:eat in freind's house. Chinese Food
+Sport: NO
+
+
+05/09/2018
+Event:No Event
+Study:Javafx Programming 5 exercises; Probability theory and mathematical statistics ; R programming for Modeling Course
+Meal:eat in freind's house. Chinese Food
+Sport: NO
