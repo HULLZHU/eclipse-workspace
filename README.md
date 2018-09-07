@@ -92,3 +92,9 @@ Event:No Event, 7:00 pm -10:00 pm for class
 Study:Javafx Programming 5 exercises; Probability theory and mathematical statistics ; R programming for Modeling Course
 Meal:eat in freind's house. Chinese Food
 Sport: NO
+
+06/09/2018
+Event: No Event
+Study:R; Probability theory and mathematical statistics;
+Meal: eat in friends' room
+SPort: 2.4km running
