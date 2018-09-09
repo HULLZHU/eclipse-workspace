@@ -98,3 +98,14 @@ Event: No Event
 Study:R; Probability theory and mathematical statistics;
 Meal: eat in friends' room
 SPort: 2.4km running
+
+07/09/2018
+Event: No event 
+Study:R; Probability theory and mathematical statistics;3 JavaFX programming exercises
+Meal: eat in friends' room
+SPort: 2.4km running
+
+08/09/2018
+Event:SHOPPING DAY and Resting Day
+Sport:2.4KM Running
+Study"2 Javafx Programming
