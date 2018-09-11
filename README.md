@@ -108,4 +108,9 @@ SPort: 2.4km running
 08/09/2018
 Event:SHOPPING DAY and Resting Day
 Sport:2.4KM Running
-Study"2 Javafx Programming
+Study:2 Javafx Programming
+
+10/09/2018
+Event:Return Merchandise
+Study: R programming; JavaFX programming
+Meal: Salmon Rice
