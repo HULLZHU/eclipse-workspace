@@ -1,7 +1,11 @@
+import java.util.Collections;
+import java.util.Comparator;
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.beans.property.DoubleProperty;
+import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -36,7 +40,7 @@ public class MultipleBounceBall extends Application{
 		btAdd.setOnAction(e ->{
 			ballPane.add();
 		});
-		
+		 
 		btSubtract.setOnAction(e->{
 			ballPane.subtract();
 		});
@@ -68,32 +72,34 @@ public class MultipleBounceBall extends Application{
 			animation = new Timeline(new KeyFrame(Duration.millis(50),e ->moveBalls()));
 			animation.setCycleCount(Timeline.INDEFINITE);
 			animation.play();
-		}
+		} 
 		
 		public void add() {
 			Color color = new Color(Math.random(), Math.random(), Math.random(), Math.random());
-			this.getChildren().add(new Ball(30,30,20,color));
+			this.getChildren().add(new Ball(15 + 30*Math.random(),15 + 30*Math.random(),2 + 18*Math.random(),color));
 		}
-		
+		 
 		public void subtract() {
 			if (this.getChildren().size()>0) {
-				this.getChildren().remove(this.getChildren().size() - 1);
+				ObservableList list = this.getChildren();
+				Ball ball = Collections.max(list,new BallRadiusComparator());
+				
+				try {
+					this.getChildren().remove(ball) ;}
+				catch (Exception ex) {
+					System.out.println("All the ball is deleted");
+				}
 			}
-		}
+		} 
 		
 		public void play() {
 			animation.play();
 		}
 		
 		public void pause() {
-			animation.pause();
+			animation.pause(); 
 		}
-		
-		public void increaseSpeed() {
-			animation.setRate(
-					animation.getRate()>=0.1 ? animation.getRate()-0.1:0);
-		}
-		
+		 
 		public DoubleProperty rateProperty() {
 			return animation.rateProperty();
 		}
@@ -118,13 +124,28 @@ public class MultipleBounceBall extends Application{
 		
 	}
 	
-	class Ball extends Circle{
+	class Ball extends Circle{ 
 		private double dx = 1,dy = 1;
 		Ball(double x, double y, double radius, Color color){
 			super(x,y,radius);
 			this.setFill(color);
-			
-		}
+		}	
 	}
+	
+	class BallRadiusComparator implements Comparator<Ball>,java.io.Serializable{
+
+		@Override
+		public int compare(Ball o1, Ball o2) {
+			if ( o1.getRadius() > o2.getRadius())
+				return 1;
+			else if ( o1.getRadius() < o2.getRadius())
+				return -1;
+			else 
+				return 0;
+		}
+		
+	}
+	
+
 
 }
