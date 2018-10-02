@@ -1,0 +1,113 @@
+What is the value of the CQF (Certificate in Quantitative Finance)? Where does it stand in the industry?
+This question previously had details. They are now in a comment.
+
+Answer
+Follow · 63
+ 
+6 Answers
+Avtar Sehra
+Avtar Sehra, Quantitive Finance and Technology Enthusiast
+Answered Feb 9, 2014 · Upvoted by Nilanjan Chaudhuri, MBA Finance, National Institute of Industrial Engineering (2014)
+The CQF is a lower cost course compared to other Quant programmes, but it's not a cheap course – coming in at close to £14k for a six months course it is quite steep.
+My view is that the program material is very dated. This material would have been very relevant back in the late 90s or early 2000’s but today it is just the basics, and most quant interviews and technical interviews wont even care to ask some of that stuff.
+The program teaches very little finance and really is mostly about applying a basic PDE approach to various products types. It covers other key elements but only at a very superfical/high level e.g. volatility and timeseries analysis. The basic material is even more frustrating as most of the lecturers are really not that great or experienced in either industry or acedemia. Out of all the lecturers only a couple are good, and they are actually full time researchers/lecturers in other universities.
+Another key point I want to make that is relevent in this day and age of MOOC's (Massive Online Open Courses), with all the excellent free courses available on the web, in particular the columbia course on Coursera and various YouTube videos on products and quant finance, the CQF really becomes a bit irrelevant and overpriced for what it is. I dont forsee the course to last for more than another five years, before it goes into obscurity.
+The course material and the extra lectures are not really value for money - in terms of audio/video quality and content. You can definetly find better videos on C++ and VBA on youtube (check out Bucky Robert's - The New Boston you tube channel for excellent courses on programming).
+Finaly, most of the people doing the course are from IT or back-office functions who are keen to get into quant or Front Office roles, so there are very few very knowledgeable finance or markets orientated people in the class who you can learn from or network with. There is nothing wrong with this, but those who are hoping to establish a strong markets focused network I think you should look else where.
+
+Will It Help You Find a Job?
+If you are a new graduate I wouldn’t waste your money on the CQF, it would be more worthwhile for you to get a masters from a reputable university e.g. the Oxford, Coloumbia or LSE courses in Finance. However, if you have a PhD from a top university and would like to gain some extra skills and have 14k lying around then go for it, but if money is tight I don’t think scraping together 14K to do the CQF will increase your employability chances that much.
+If you are already in a somewhat quantitative area and want to formalise your knowledge or would like to do this for fun or gain learning momentum, its not too bad considering it consists of evening classes and you can watch videos at your leisure. But don’t expect this to open many doors, that is my key point.
+Again, I want to reiterate the point that if you are not already in a quantitative area, this will definitely not help you to get into that area, so I would advice you not to waste your money on this course but consider a MFE from a good university. I think the CQF might be good to formalise basic knowledge if you are already in that kind of area. 
+
+Would I do it again if I knew then what I know now?
+Simple answer is… probably not. But then again I like learning, and I don't think I would like to pay over £30k for a MFE.  This was more of a fun thing for me to do, I like learning in a class environment and I like maths, so my arm could be twisted to do it again, but I would start with lower expectations.
+
+The final point I want to leave you with is that this is not the course if you want to move into a quant role or enhance your career - for that consider an MFE. But if you have a general ineterst in PDE math applied to quant finance then this course is ok (also if you have £14k to spare).
+41k Views · View Upvoters
+ 
+RecommendedAll
+He Zhu
+
+Promoted by Sisense
+
+Business intelligence tool - free trial.
+Visualize complex data with stunning dashboards. Your free trial of Sisense is just moments away!
+Learn more at sisense.com
+ 
+Subbaraman Sankar
+Subbaraman Sankar, Studied Accountancy and knows something about it.
+Answered Aug 22, 2016
+Quantitative finance is basically using mathematical models for the purpose of derivatives, quantitative trading, modelling and helping in Investment strategies. This is a great career on paper but like any other job it does have its ups and downs.
+
+Before touching on the up side, I would like you to be aware of a few realities that I have noticed and have listed below.
+
+In India, this is an upcoming field but more preference is being given to people with experience. Fresh graduates are getting employed with trading houses and investment banks but most are just pushing papers because it takes years to gain experience in strategy formulation and executing them. Do not expect the job to be intellectually challenging in the first few years because most will be just following instructions from higher ups. The work performed in the initial years of joining will be very organisation specific. Therefore, unless there is an additional skill set like data analysis, programming or many years of experience in this field it will be hard to shift jobs or get a new one easily. Take the example of a pilot. A newly trained and qualified pilot needs to be retrained and oriented according to the type of aircraft he is supposed to fly. This is a costly affair and hence rarely do we see pilots fly multiple types of aircraft. They normally stick to just one type. The same way many jobs in this field are created according to client needs. This means that if a bank loses a client it has a direct impact on the job. So please skill yourself with another qualification which can integrate your job profile while working. Which ancillary should you choose would depend on your job profile. A person working in the more technical side of the work could arm himself with a programming skill.
+
+On the positive side, doing your course from a reputed institution could get you a job quickly. As India is an emerging market you have a better chance now then ever before. There are many entrepreneural opportunities available too.
+
+12.7k Views · View Upvoters · Answer requested by Rohit Mishra
+ 
+RecommendedAll
+He Zhu
+
+Promoted by Rich Dad Events
+
+Free WhitePlains area real estate event, October 18 - 20.
+Learn investing tips from Robert Kiyosaki's best selling book Rich Dad Poor Dad.
+Learn more at richdadfreeseminar.com
+ 
+Ritvik Dashora
+Ritvik Dashora, Debt Capital Makets Analyst ; CFA Level 3 cleared
+Answered Dec 11, 2016
+Hi there,
+
+It is a Financial Engineering program and a finance designation which provides in-depth, practical training in Mathematical Finance, Financial Modeling, Derivatives and Risk Management. Yes…Definitely it is a good certification. For sure, this certification will add value to your credentials. Go for it….but if you look even more wider, there are more certifications which are better than this one. The best is CFA. According to me, it is the best certification in finance stream, specifically for investment analysis. CQF covers only quant portion of finance not qualitative, whereas CFA covers the both. It would be a little bit tougher and even more costly but it is worth. You will be master of quantitative and qualitative finance if you do it in a fruitful manner.
+
+As far as I think… If we do CFA and FRM, it is more than enough. You don’t need to look for any other certifications (only CFA is enough, I added FRM just if you wanna enter in risk analysis profile.
+
+10.9k Views · View Upvoters · Answer requested by Bijon Sahu
+ 
+RecommendedAll
+He Zhu
+
+Aaron Brown
+Aaron Brown, MBA Finance & Statistics, The University of Chicago Booth School of Business (1982)
+Answered Sep 9
+It is the gold standard of quantitative finance certifications, the only one with solid academic and practitioner meaning, but it’s not widely known outside the quant community. Much of the value is getting in a network of some of the most innovative quant practitioners. And another strong value is what you will learn.
+
+I wouldn’t recommend it to someone who can’t get a job in quant finance, or someone who will struggle in the program. But if you already have or can get a job, and you can master the material, it can be a major career boost.
+
+The biggest career issue for quants is not getting or doing a job; it’s finding a situation in which what you do is understood and valued. This is where a CQF will help. It’s a currency that can’t be spent everywhere, but is highly valued in the right places.
+
+6.1k Views · View Upvoters
+ 
+RecommendedAll
+He Zhu
+
+Syed Adeel Hussain
+Syed Adeel Hussain, Independent (2017-present)
+Updated May 23
+Its getting popular by the day! Although, not heavily advertised by the employers like FRM/PRM and CFA, but it does give you an edge over other professional market certifications in Risk, Investments and Finance.
+
+You can find work as a Quant at an entry level with such a certificate, provided you are working in an advance and / or emerging market economy. Of Course, if you are working in a third world country, the employment opportunities shall be very limited due to lack of derivatives trading, hedging and deal structuring in the financial markets.
+
+2.2k Views · View Upvoters
+ 
+RecommendedAll
+He Zhu
+
+Guzman Safon
+Guzman Safon, I'm not a quant, but know something about it
+Updated Apr 7, 2017
+A2A.
+
+To be honest, I don't know. For what I searched on their website, is not strictly "cheap", for being a course.
+
+If you are interested in quantitative knowledge, you may be interested in the FRM Program.
+
+Good luck.
+
+EDIT: I would say now that both the CFA and FRM Program are not deep enough in quantitative topics to work as a quant.
+
+10.4k Views · View Upvoters · Answer requested by Kingshuk Chatterjee
