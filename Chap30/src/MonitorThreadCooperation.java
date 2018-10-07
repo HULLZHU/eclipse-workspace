@@ -43,8 +43,7 @@ public class MonitorThreadCooperation {
 			e.printStackTrace();
 		}
 		}
-	}
-	  
+	} 
   }
 
   

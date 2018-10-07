@@ -102,7 +102,7 @@ public class ConsumerProducer {
 			finally {
 				lock.unlock();
 				return value;
-			}
+			} 
 			
 		}
 	}
